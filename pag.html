@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lan="eng">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Diana Martinez Alta Costura</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <style>
+        .fa {  
+    padding: 20px;  
+    text-align: center;  
+    margin: 5px 2px;  
+    font-size: 30px;  
+    width: 50px;  
+  }  
+  #links p{text-align:center}
+    </style>
+<body>
+    <section class="header">
+        <nav> 
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="" target="_blank">HOME</a></li>
+                    <li><a href="">GALERY</a></li>
+                    <li><a href="https://www.instagram.com/dianamartineznovias/"  target="_blank">INSTAGRAM</a></li>
+                    <li><a href="https://www.facebook.com/dianamartineznovias/" target="_blank">FACEBOOK</a></li>
+                    <li><a href='#' id="contact" onclick="onclickContact()">CONTACT US</a></li>
+                </ul>
+            </div>
+            
+            <i class="fa fa-sort-desc" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text">
+        <h1>DIANA MARTÍNEZ </h1>
+        <h3 id="h3">NOVIAS & ALTA COSTURA</h3>
+        <!--<a class="ank" id="click-to-see-collection" href=''>CLICK TO SEE OUR COLLECTION</a> -->
+        <a class="ank" id="click-to-see-collection" href=''>CLICK TO SEE OUR COLLECTION</a>
+
+    </div>
+    
+    <div id="new">
+        <h1><a class="ank" href="">OUR CLASSIC DESIGNS</a></h1>
+        <p id="p">We offer a great variety of products,<br> ranging from elegant dresses to stay-at-home clothes.</p>
+        <img class="foto"src="data:image/jpeg;base64,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">
+        <img class="foto"src="http://www.dianamartinez.com.co/images/banner-01.jpg">
+        <img class="foto"src="https://asset1.zankyou.com/images/wervice-card-big/9b8/64a4/1050/800/w/23047/-/1383178502.jpg">
+        <img class="foto"src="https://i.pinimg.com/originals/d3/64/ce/d364cead334e86886ab019f53dedcc3d.jpg">
+        <img class="foto"src="https://www.eluniversal.com.co/binrepository/597x700/0c0/0d0/none/13704/UJKK/diana-martinez2_4727503_20210618102618.jpg">
+        <img class="foto"src="https://asset1.zankyou.com/images/wervice-card-big/5e2/3e2b/1050/800/w/23047/-/1383178518.jpg">
+    </div>
+    </section>  
+    <section>
+    <div id="sobre">
+        <h1 style="margin-top:15px">ABOUT DIANA MARTINEZ</h1>
+        <p style="margin-top:10px;margin-bottom:10px">Diana Martinez es graduada en
+            DISEÑO DE MODAS en el
+            INSTITUTO FELI<br> en Barcelona, España.
+            Es Especialista en Houte Couture
+            y en Novias,<br> su gran pasión.
+            Diana es una mujer cálida por naturaleza, 
+            tímida e introvertida,<br> pero al momento de 
+            crear vuelca toda su creación en hacer<br> realidad el sueño
+            de cada clienta con prendas exclusivas, <br>únicas e irrepetibles a 
+            la hora de vestirse para ocaciones especiales.</p>
+        <img src="https://www.dianamartinez.com.co/images/diana-martinez.jpg" alt="foto de Diana Martinez">
+        <img src="https://www.celuguia.com/inicio/media/large/upload-460616288951.jpg" style="width:600px;margin-left:60px">
+    </div>
+    </section>
+
+    <section id="links">
+        <h1 style="text-align:center;"><a class="ank">MORE ABOUT US</a></h1>
+        <div style="margin-top:50px">
+
+        <pa>
+          <div>
+            <div style="color:brown;display:block;text-align:center">
+              <h2>Contáctanos</h2>
+              <h4 style="margin-top: 5px;"><span style="text-decoration:underline">Correo electronico:</span> novias@dianamartinez.com.co</h4>
+              <h4 style="margin-top: 5px"><span style="text-decoration:underline">Direccion:</span> Piso 2 Local 202, Cra. 2 ###5-84,<br>
+                 Cartagena de Indias, Bolívar</h4>
+            </div>
+
+
+          </div>
+        </pa>
+
+    </div>
+    <div style="text-align: center;">
+      <h3 style="text-align:center;color:#777; border: 1px solid #fff;font-size:15px;margin-top:50px;display:inline-block;writing-mode:horizontal-tb;">MADE BY JULIÁN MONTES M.</h3></div>
+    </section>
+   
+   <script>
+
+       const clickTo= document.getElementById('click-to-see-collection')
+
+       //para el link contactanos:
+
+       const contacto= document.getElementById('contact')
+       function onclickContact(){
+       }
+       //efectos (event) para cuando el usuario hace hover en imgs:
+       const listaIMGS= document.querySelectorAll('.foto')
+       
+       listaIMGS.forEach(function(img){
+            img.addEventListener('mouseover',function(){
+                img.style='box-shadow: 8px 8px 8px grey'
+            img.addEventListener('mouseout', function(){
+                img.style=''
+            })
+
+            })})
+        
+    </script>
+</body>
+</html>
+
